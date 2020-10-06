@@ -1,0 +1,10 @@
+{{#each posts}}
+<form action="/mod/{{dataValues.id}}" method="post">
+    <p>Titulo</p>
+    <input type="text" name="titulomod" id="titulomod" value="{{dataValues.titulo}}">
+    <p>conteudo:</p>
+    <textarea name="conteudomod" id="conteudomod" cols="30" rows="10">{{dataValues.conteudo}}</textarea>
+    <br>
+    <button type="submit">Modificar</button>
+</form>
+{{/each}}
